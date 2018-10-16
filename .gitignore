@@ -68,3 +68,4 @@ fabric.properties
 # Properties
 
 src/main/resources/resources.properties
+/src/main/resources/resources.properties
