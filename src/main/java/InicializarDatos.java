@@ -10,9 +10,13 @@ import java.util.Properties;
  * Created by Dark_Trainer on 16/10/2018.
  */
 public class InicializarDatos {
+    public static HashMap<String, String> mapProp;
+    public InicializarDatos() {
+        initProperties();
+    }
 
     public HashMap<String,String> initProperties() {
-        HashMap<String, String> mapProp = new HashMap<String, String>();
+        mapProp = new HashMap<String, String>();
         Properties prop = new Properties();
         InputStream input = null;
         String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
